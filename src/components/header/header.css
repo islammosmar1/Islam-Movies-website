@@ -1,0 +1,80 @@
+header{
+    height: 10vh;
+    line-height: 10vh;
+    background-image: linear-gradient(to right bottom ,rgba(0,0,0,0.9),rgba(0,0,0,0.9),rgba(0,0,0,0.6),rgba(0,0,0,0.5),rgba(0,0,0,0));
+    color:#fff;
+    position: relative;
+    z-index: 999;
+} 
+header ul a:hover{
+    color: rgb(216, 1, 1);
+    behavior: smooth;
+   }
+
+.logo img{
+    width: 130px;
+    height: 50px;
+    margin-top: 10px;
+    /* margin-bottom: 40px; */
+    /* margin: auto; */
+
+    margin-right: 30px;
+    border-radius: 16px;
+}
+header a{
+    color:#fff;
+    margin-left: 30px;
+}
+header i{
+    height: 40px;padding: 10px;quotes: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 0 10px;
+}
+header button{
+    border-radius: 10px;
+    font-style: 15px;
+    font-weight: bold;
+}
+.toggle{
+    display: none;
+
+}
+
+@media only screen and (max-width:768px) {
+    header nav .flexSB{
+        display: none;
+    }
+    .account{
+        display: none;
+    }
+     .navMenu-list{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #0000009d;
+        width: 50%;
+        height: 100vh;z-index: 999;
+     }
+     header ul li{
+        margin-top: 30px;
+        padding: 0 50px;
+     }
+
+     header ul a:hover{
+      color: rgb(216, 1, 1);
+      behavior: smooth;
+     }
+
+    .toggle{
+        display: block;
+        position: absolute;
+        top: 0;bottom: 0;right: 20px;margin: auto;
+        cursor: pointer;
+        background:none ;
+    }
+    
+}
